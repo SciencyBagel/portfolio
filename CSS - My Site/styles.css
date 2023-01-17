@@ -1,0 +1,154 @@
+body {
+    background-color: #eaf6f6;
+    color: #40514e;
+     /* centers the page */
+    text-align: center;
+    margin: 0;
+
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sacramento', cursive;
+}
+
+h1, h2, h3 {
+    color: #00538b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    /* line-height: 2; line-height is the height of the blue part in the box model */
+
+    /* Method 1 for dynamic size: 100% is 16px. If we want that to equal 90px: 90px/16px=562.5%*/
+    font-size: 5.625rem;
+
+    /* Method 2 for dynamic size: 1 em = 16px. Therefore, 16px = 100% = 1em. Both methods add percentage/em from whatever it is inherited.*/
+    /* font-size: 1em; */
+
+    /* font-weight: bold; */
+    font-family: 'Sacramento', cursive;
+    
+    /* margin-top: 50px;
+    margin-bottom: 10px */
+    margin: 50px auto 0 auto; /* auto is for centering */
+
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin-bottom: 16px;
+    margin-top: 0px;
+    line-height: 2;
+}
+
+hr {
+    border: dotted #00538b1c 6px;
+
+    /* removes the bottom border so it looks like a dotted line */
+    border-bottom: none; 
+    width: 4%;
+    margin: 100px auto;
+}
+
+a {
+    color: #00538b;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+/* pseudo class */
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.top-container {
+    /* by being relative, child elements can be positioned relative to the top-container */
+    position: relative;
+    padding-top: 100px;
+    background-color: #ccebf4;
+}
+
+.intro {
+    font-weight: normal;
+    width: 30%;
+    margin: auto;
+}
+
+.software {
+    font-style: inherit;
+}
+
+.middle-container {
+    margin: 100px 0; /* 1st is top/bottom, 2nd is left/right */
+}
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.python-icon {
+    width: 16%;
+    height: auto;
+
+    float: left;
+    margin-right: 30px;
+}
+
+.cpp-icon {
+    width: 16%;
+    height: auto;
+
+    float: right;
+    margin-left: 30px;
+}
+
+.bottom-container {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ccebf4;
+    padding: 50px 0 20px; 
+}
+
+.top-cloud {
+    /* takes the element out of the normal flow of the page */
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+
+.contact-me {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 0.75rem;
+    margin: 20px 0;
+}
+
+.skill1-desc {
+    /* clear: left; clears the float */
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px; /* 1st is top, 2nd is left/right, 3rd is bottom */
+}
